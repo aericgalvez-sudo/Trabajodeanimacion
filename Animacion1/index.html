@@ -1,0 +1,504 @@
+<html>
+
+<head>
+    <title>ANIMACION 1</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .texto-centro-abajo {
+            position: fixed;
+            bottom: 400px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            width: 70%;
+            color: black;
+            font-size: 50px;
+
+        }
+
+        .contenedor {
+
+            width: 400px;
+            height: 400px;
+            border: 5px solid beige;
+            position: relative;
+            /* provoca el centrado del div contenedor */
+            margin: 0 auto;
+            /* provoca el centrado del div contenedor */
+            overflow: hidden;
+            background-size: cover;
+
+
+        }
+
+        .contenedor1 {
+
+            width: 410px;
+            height: 410px;
+            border: 40px solid brown;
+            position: relative;
+            /* provoca el centrado del div contenedor */
+            margin: 0 auto;
+            /* provoca el centrado del div contenedor */
+            overflow: hidden;
+            background-size: cover;
+
+        }
+
+        .cuadrado {
+            width: 50px;
+            height: 50px;
+            background-color: brown;
+            position: absolute;
+
+        }
+
+        .c0 {
+            left: 50px;
+            top: 0px;
+        }
+
+        .c1 {
+            left: 0px;
+            top: 50px;
+        }
+
+        .c2 {
+            left: 100px;
+            top: 50px;
+        }
+
+        .c3 {
+            left: 150px;
+            top: 0px;
+        }
+
+        .c4 {
+            left: 200px;
+            top: 50px;
+        }
+
+        .c5 {
+            left: 200px;
+            top: -50px;
+        }
+
+        .c6 {
+            left: 300px;
+            top: -50px;
+        }
+
+        .c7 {
+            left: 250px;
+            top: 0px;
+        }
+
+        .c8 {
+            left: 300px;
+            top: 50px;
+        }
+
+        .c9 {
+            left: 150px;
+            top: 100px;
+        }
+
+        .c10 {
+            left: 350px;
+            top: 0px;
+        }
+
+        .c11 {
+            left: 50px;
+            top: 100px;
+        }
+
+        .c12 {
+            left: 250px;
+            top: 100px;
+        }
+
+        .c13 {
+            left: 350px;
+            top: 100px;
+        }
+
+        .c14 {
+            left: 0px;
+            top: 150px;
+        }
+
+        .c15 {
+            left: 100px;
+            top: 150px;
+        }
+
+        .c16 {
+            left: 200px;
+            top: 150px;
+        }
+
+        .c17 {
+            left: 300px;
+            top: 150px;
+        }
+
+        .c18 {
+            left: 50px;
+            top: 200px;
+        }
+
+        .c19 {
+            left: 150px;
+            top: 200px;
+        }
+
+        .c20 {
+            left: 250px;
+            top: 200px;
+        }
+
+        .c21 {
+            left: 350px;
+            top: 200px;
+        }
+
+        .c22 {
+            left: 0px;
+            top: 250px;
+        }
+
+        .c23 {
+            left: 100px;
+            top: 250px;
+        }
+
+        .c24 {
+            left: 200px;
+            top: 250px;
+        }
+
+        .c25 {
+            left: 300px;
+            top: 250px;
+        }
+
+        .c26 {
+            left: 50px;
+            top: 300px;
+        }
+
+        .c27 {
+            left: 150px;
+            top: 300px;
+        }
+
+        .c28 {
+            left: 250px;
+            top: 300px;
+        }
+
+        .c29 {
+            left: 350px;
+            top: 300px;
+        }
+
+        .c30 {
+            left: 0px;
+            top: 350px;
+        }
+
+        .c31 {
+            left: 100px;
+            top: 350px;
+        }
+
+        .c32 {
+            left: 200px;
+            top: 350px;
+        }
+
+        .c33 {
+            left: 300px;
+            top: 350px;
+        }
+
+        .cuadrado1 {
+            width: 50px;
+            height: 50px;
+            background-color: beige;
+            position: absolute;
+        }
+
+        .b0 {
+            left: 0px;
+            top: 0px;
+        }
+
+        .b1 {
+            left: 100px;
+            top: 0px;
+        }
+
+        .b2 {
+            left: 200px;
+            top: 0px;
+        }
+
+        .b3 {
+            left: 300px;
+            top: 0px;
+        }
+
+        .b4 {
+            left: 50px;
+            top: 50px;
+        }
+
+        .b5 {
+            left: 150px;
+            top: 50px;
+        }
+
+        .b6 {
+            left: 250px;
+            top: 50px;
+        }
+
+        .b7 {
+            left: 350px;
+            top: 50px;
+        }
+
+        .b8 {
+            left: 0px;
+            top: 100px;
+        }
+
+        .b9 {
+            left: 100px;
+            top: 100px;
+        }
+
+        .b10 {
+            left: 200px;
+            top: 100px;
+        }
+
+        .b11 {
+            left: 300px;
+            top: 100px;
+        }
+
+        .b12 {
+            left: 50px;
+            top: 150px;
+        }
+
+        .b13 {
+            left: 150px;
+            top: 150px;
+        }
+
+        .b14 {
+            left: 250px;
+            top: 150px;
+        }
+
+        .b15 {
+            left: 350px;
+            top: 150px;
+        }
+
+        .b16 {
+            left: 0px;
+            top: 200px;
+        }
+
+        .b17 {
+            left: 100px;
+            top: 200px;
+        }
+
+        .b18 {
+            left: 200px;
+            top: 200px;
+        }
+
+        .b19 {
+            left: 300px;
+            top: 200px;
+        }
+
+        .b20 {
+            left: 50px;
+            top: 250px;
+        }
+
+        .b21 {
+            left: 150px;
+            top: 250px;
+        }
+
+        .b22 {
+            left: 250px;
+            top: 250px;
+        }
+
+        .b23 {
+            left: 350px;
+            top: 250px;
+        }
+
+        .b24 {
+            left: 0px;
+            top: 300px;
+        }
+
+        .b25 {
+            left: 100px;
+            top: 300px;
+        }
+
+        .b26 {
+            left: 200px;
+            top: 300px;
+        }
+
+        .b27 {
+            left: 300px;
+            top: 300px;
+        }
+
+        .b28 {
+            left: 50px;
+            top: 350px;
+        }
+
+        .b29 {
+            left: 150px;
+            top: 350px;
+        }
+
+        .b30 {
+            left: 250px;
+            top: 350px;
+        }
+
+        .b31 {
+            left: 350px;
+            top: 350px;
+        }
+
+        .menu {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .menu a {
+            color: white;
+            font-size: 30px;
+            text-decoration: none;
+        }
+
+        .titulo1 {
+            text-align: center;
+            color: white;
+            font-size: 50px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body style="background-color: black;">
+
+    <h1 class="titulo1">ANIMACION 1</h1>
+    <div class="contenedor1">
+        <div class="contenedor">
+            <div class="cuadrado c0"></div>
+            <div class="cuadrado c1"></div>
+            <div class="cuadrado c2"></div>
+            <div class="cuadrado c3"></div>
+            <div class="cuadrado c4"></div>
+            <div class="cuadrado c5"></div>
+            <div class="cuadrado c6"></div>
+            <div class="cuadrado c7"></div>
+            <div class="cuadrado c8"></div>
+            <div class="cuadrado c9"></div>
+            <div class="cuadrado c10"></div>
+            <div class="cuadrado c11"></div>
+            <div class="cuadrado c12"></div>
+            <div class="cuadrado c13"></div>
+            <div class="cuadrado c14"></div>
+            <div class="cuadrado c15"></div>
+            <div class="cuadrado c16"></div>
+            <div class="cuadrado c17"></div>
+            <div class="cuadrado c18"></div>
+            <div class="cuadrado c19"></div>
+            <div class="cuadrado c20"></div>
+            <div class="cuadrado c21"></div>
+            <div class="cuadrado c22"></div>
+            <div class="cuadrado c23"></div>
+            <div class="cuadrado c24"></div>
+            <div class="cuadrado c25"></div>
+            <div class="cuadrado c26"></div>
+            <div class="cuadrado c27"></div>
+            <div class="cuadrado c28"></div>
+            <div class="cuadrado c29"></div>
+            <div class="cuadrado c30"></div>
+            <div class="cuadrado c31"></div>
+            <div class="cuadrado c32"></div>
+            <div class="cuadrado c33"></div>
+
+            <div class="cuadrado1 b0"></div>
+            <div class="cuadrado1 b1"></div>
+            <div class="cuadrado1 b2"></div>
+            <div class="cuadrado1 b3"></div>
+            <div class="cuadrado1 b4"></div>
+            <div class="cuadrado1 b5"></div>
+            <div class="cuadrado1 b6"></div>
+            <div class="cuadrado1 b7"></div>
+            <div class="cuadrado1 b8"></div>
+            <div class="cuadrado1 b9"></div>
+            <div class="cuadrado1 b10"></div>
+            <div class="cuadrado1 b11"></div>
+            <div class="cuadrado1 b12"></div>
+            <div class="cuadrado1 b13"></div>
+            <div class="cuadrado1 b14"></div>
+            <div class="cuadrado1 b15"></div>
+            <div class="cuadrado1 b16"></div>
+            <div class="cuadrado1 b17"></div>
+            <div class="cuadrado1 b18"></div>
+            <div class="cuadrado1 b19"></div>
+            <div class="cuadrado1 b20"></div>
+            <div class="cuadrado1 b21"></div>
+            <div class="cuadrado1 b22"></div>
+            <div class="cuadrado1 b23"></div>
+            <div class="cuadrado1 b24"></div>
+            <div class="cuadrado1 b25"></div>
+            <div class="cuadrado1 b26"></div>
+            <div class="cuadrado1 b27"></div>
+            <div class="cuadrado1 b28"></div>
+            <div class="cuadrado1 b29"></div>
+            <div class="cuadrado1 b30"></div>
+            <div class="cuadrado1 b31"></div>
+            <div class="cuadrado1 b32"></div>
+            <div class="cuadrado1 b33"></div>
+
+            <div class="texto-centro-abajo">
+                CHESS GAME
+            </div>
+
+        </div>
+    </div>
+    <div class="menu">
+        <a href="../index.html">INICIO</a>
+    </div>
+
+</body>
+
+</html>
