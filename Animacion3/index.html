@@ -1,0 +1,263 @@
+<html>
+
+<head>
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #contenedor {
+            width: 500px;
+            height: 300px;
+            border: 1px solid black;
+            position: relative;
+            margin: 0 auto;
+            /*centrar el contenedor*/
+            overflow: hidden;
+            /*oculta todo lo que contiene*/
+            background-color: black;
+        }
+
+        .estrella {
+            width: 5px;
+            height: 5px;
+            border-radius: 80%;
+            background-color: white;
+            position: absolute;
+            animation: parpadear 4s infinite,
+                mover 5s linear infinite;
+        }
+
+        .e1 {
+            left: 150px;
+            top: 20px;
+            animation-delay: 1s;
+        }
+
+        .e2 {
+            left: 40px;
+            top: 40px;
+            animation-delay: 2s;
+        }
+
+        .e3 {
+            left: 60px;
+            top: 100px;
+            animation-delay: 3s;
+        }
+
+        .e4 {
+            left: 40px;
+            top: 250px;
+            animation-delay: 4s;
+        }
+
+        .e5 {
+            left: 150px;
+            top: 200px;
+            animation-delay: 5s;
+        }
+
+        .e6 {
+            left: 250px;
+            top: 40px;
+            animation-delay: 6s;
+        }
+
+        .e7 {
+            left: 250px;
+            top: 240px;
+            animation-delay: 7s;
+        }
+
+        .e8 {
+            left: 320px;
+            top: 200px;
+            animation-delay: 8s;
+        }
+
+        .e9 {
+            left: 400px;
+            top: 250px;
+            animation-delay: 9s;
+        }
+
+        .e10 {
+            left: 300px;
+            top: 100px;
+            animation-delay: 10s;
+        }
+
+        .e11 {
+            left: 350px;
+            top: 50px;
+            animation-delay: 1s;
+        }
+
+        .e12 {
+            left: 150px;
+            top: 80px;
+            animation-delay: 2s;
+        }
+
+        .e13 {
+            left: 400px;
+            top: 20px;
+            animation-delay: 3s;
+        }
+
+        .e14 {
+            left: 100px;
+            top: 280px;
+            animation-delay: 4s;
+        }
+
+        .e15 {
+            left: 300px;
+            top: 280px;
+            animation-delay: 5s;
+        }
+
+        .e16 {
+            left: 450px;
+            top: 80px;
+            animation-delay: 6s;
+        }
+
+        .e17 {
+            left: 160px;
+            top: 240px;
+            animation-delay: 7s;
+        }
+
+        .e18 {
+            left: 450px;
+            top: 220px;
+            animation-delay: 8s;
+        }
+
+        .e19 {
+            left: 480px;
+            top: 40px;
+            animation-delay: 9s;
+        }
+
+        .e20 {
+            left: 70px;
+            top: 210px;
+            animation-delay: 10s;
+        }
+
+
+        #cuadrito {
+            width: 200px;
+            height: 100px;
+            position: absolute;
+            /*Obligatorio para mover el div*/
+            top: 100px;
+            left: -100px;
+
+            animation: cuadrito 3s infinite;
+            animation-timing-function: linear;
+            /*define la forma de moverse*/
+        }
+
+        @keyframes cuadrito {
+            from {
+                left: -100px;
+            }
+
+            to {
+                left: 500px;
+            }
+        }
+
+        @keyframes parpadear {
+
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes mover {
+
+            from {
+                transform: translateX(0px);
+            }
+
+            to {
+                transform: translateX(-300px);
+            }
+        }
+
+
+        #cuadrito img {
+            width: 200px;
+            height: 100px;
+        }
+
+        .menu {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .menu a {
+            color: black;
+            font-size: 30px;
+            text-decoration: none;
+        }
+
+        .titulo1 {
+            text-align: center;
+            color: black;
+            font-size: 50px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="titulo1">ANIMACION 3</h1>
+    <div id="contenedor">
+
+        <div id="cuadrito">
+            <img src="img1/cohete.png" alt="">
+        </div>
+        <div class=" estrella e1"></div>
+        <div class=" estrella e2"></div>
+        <div class=" estrella e3"></div>
+        <div class=" estrella e4"></div>
+        <div class=" estrella e5"></div>
+        <div class=" estrella e6"></div>
+        <div class=" estrella e7"></div>
+        <div class=" estrella e8"></div>
+        <div class=" estrella e9"></div>
+        <div class=" estrella e10"></div>
+        <div class=" estrella e11"></div>
+        <div class=" estrella e12"></div>
+        <div class=" estrella e13"></div>
+        <div class=" estrella e14"></div>
+        <div class=" estrella e15"></div>
+        <div class=" estrella e16"></div>
+        <div class=" estrella e17"></div>
+        <div class=" estrella e18"></div>
+        <div class=" estrella e19"></div>
+        <div class=" estrella e20"></div>
+    </div>
+    <div class="menu">
+        <a href="../index.html">INICIO</a>
+    </div>
+</body>
+
+
+</html>
