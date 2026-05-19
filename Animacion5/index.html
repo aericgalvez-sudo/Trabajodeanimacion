@@ -1,0 +1,199 @@
+<html>
+
+<head>
+    <title>Codigo grafico</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .contenedor {
+            width: 800px;
+            height: 300px;
+            border: 1px solid black;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .texto {
+            position: absolute;
+            width: 100%;
+            top: 120px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+            font-family: Arial;
+            opacity: 0;
+
+            animation: aparecer 2s forwards 12s;
+        }
+
+        .selva,
+        .sierra,
+        .costa,
+        .mar {
+            width: 200px;
+            height: 300px;
+            position: absolute;
+            background-size: cover;
+            left: -50px;
+            top: -300px;
+        }
+
+        .mar {
+            background-image: url(img4/mar.jpg);
+            left: 0px;
+            animation: mar 3s 1 forwards;
+        }
+
+        .costa {
+            background-image: url(img4/costa.jpg);
+            left: 200px;
+            animation: costa 3s 1 forwards 3s;
+        }
+
+        .sierra {
+            background-image: url(img4/sierra.jpg);
+            left: 400px;
+            animation: sierra 3s 1 forwards 6s;
+        }
+
+        .selva {
+            background-image: url(img4/selva.jpg);
+            left: 600px;
+            animation: selva 3s 1 forwards 9s;
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: scale(0);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes mar {
+            0% {
+                top: -100px;
+                transform: scaleY(180deg);
+            }
+
+            50% {
+                top: 300px;
+            }
+
+            100% {
+                top: 0px;
+            }
+        }
+
+        @keyframes costa {
+            0% {
+                top: -100px;
+                transform: scaleY(180deg);
+            }
+
+            50% {
+                top: 300px;
+            }
+
+            100% {
+                top: 0px;
+            }
+        }
+
+        @keyframes sierra {
+            0% {
+                top: -100px;
+                transform: scaleY(180deg);
+            }
+
+            50% {
+                top: 300px;
+            }
+
+            100% {
+                top: 0px;
+            }
+        }
+
+        @keyframes selva {
+            0% {
+                top: -100px;
+                transform: scaleY(180deg);
+            }
+
+            50% {
+                top: 300px;
+            }
+
+            100% {
+                top: 0px;
+            }
+        }
+
+        .mar:hover {
+            transition: 1s;
+            scale: 1.2;
+            z-index: 1;
+        }
+
+        .costa:hover {
+            transition: 1s;
+            scale: 1.2;
+            z-index: 1;
+        }
+
+        .sierra:hover {
+            transition: 1s;
+            scale: 1.2;
+            z-index: 1;
+        }
+
+        .selva:hover {
+            transition: 1s;
+            scale: 1.2;
+            z-index: 1;
+        }
+
+        .menu {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .menu a {
+            color: black;
+            font-size: 30px;
+            text-decoration: none;
+        }
+
+        .titulo1 {
+            text-align: center;
+            color: black;
+            font-size: 50px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="titulo1">ANIMACION 5</h1>
+    <div class="contenedor">
+        <div class="selva"></div>
+        <div class="sierra"></div>
+        <div class="costa"></div>
+        <div class="mar"></div>
+        <div class="texto">LAS 4 REGIONES DEL PERÚ</div>
+    </div>
+    <div class="menu">
+        <a href="../index.html">INICIO</a>
+    </div>
+</body>
+
+</html>
