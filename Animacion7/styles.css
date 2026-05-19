@@ -1,0 +1,451 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: black;
+}
+
+.contenedor {
+  width: 400px;
+  height: 700px;
+  background-color: yellow;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.cuadrito1 {
+  height: 100px;
+  width: 100px;
+  background-image: url(img/piezadecoco.png);
+  background-size: cover;
+  position: absolute;
+  left: 100px;
+  top: -100px;
+
+  animation: cuadrito1 1.5s forwards 1s;
+}
+
+@keyframes cuadrito1 {
+  0% {
+    top: -100px;
+  }
+
+  50% {
+    top: 200px;
+    rotate: -10deg;
+  }
+
+  55% {
+    top: 200px;
+  }
+
+  80% {
+    top: 200px;
+  }
+
+  100% {
+    top: 700px;
+    rotate: 0deg;
+  }
+}
+
+.cuadrito2 {
+  height: 120px;
+  width: 120px;
+  background-image: url(img/piezadecoco.png);
+  background-size: cover;
+  position: absolute;
+  left: 10px;
+  top: -120px;
+  animation: cuadrito2 1.5s forwards 1s;
+}
+
+@keyframes cuadrito2 {
+  0% {
+    top: -500px;
+  }
+
+  50% {
+    top: 520px;
+    rotate: -10deg;
+  }
+
+  55% {
+    top: 520px;
+  }
+
+  80% {
+    top: 520px;
+  }
+
+  100% {
+    top: 700px;
+    rotate: 0deg;
+  }
+}
+
+.cuadrito3 {
+  height: 150px;
+  width: 150px;
+  background-image: url(img/cocopartido.png);
+  background-size: cover;
+  position: absolute;
+  left: 250px;
+  top: -150px;
+  animation: cuadrito3 1.5s forwards 1s;
+}
+
+@keyframes cuadrito3 {
+  0% {
+    top: -150px;
+  }
+
+  40% {
+    top: 20px;
+  }
+
+  80% {
+    top: 20px;
+  }
+
+  100% {
+    top: 700px;
+  }
+}
+
+.cuadrito4 {
+  height: 130px;
+  width: 130px;
+  background-image: url(img/piezadecoco.png);
+  background-size: cover;
+  position: absolute;
+  left: 220px;
+  top: -150px;
+  rotate: 280deg;
+  animation: cuadrito4 1.5s forwards 1s;
+}
+
+@keyframes cuadrito4 {
+  0% {
+    top: 0px;
+  }
+
+  50% {
+    top: 380px;
+    rotate: 290deg;
+  }
+
+  55% {
+    top: 380px;
+  }
+
+  80% {
+    top: 380px;
+  }
+
+  100% {
+    top: 700px;
+    rotate: 280deg;
+  }
+}
+
+.rama {
+  width: 300px;
+  height: 400px;
+  background-image: url(img/RAMA.png);
+  background-size: cover;
+  position: absolute;
+  left: 100px;
+  top: -160px;
+  rotate: 10deg;
+  animation:
+    rama 1.5s infinite alternate linear,
+    desaparecer5 1s forwards 8.5s;
+}
+
+@keyframes rama {
+  from {
+    rotate: 10deg;
+  }
+
+  to {
+    rotate: 22deg;
+  }
+}
+
+@keyframes desaparecer5 {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.titulo1 {
+  font-size: 60px;
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+  line-height: 50px;
+  position: relative;
+  top: 350px;
+
+  animation: texto2 3s forwards;
+}
+
+@keyframes texto2 {
+  0% {
+    transform: translateX(-280px);
+  }
+
+  50% {
+    transform: translateX(48px);
+  }
+
+  75% {
+    transform: translateX(48px);
+  }
+
+  100% {
+    transform: translateX(450px);
+  }
+}
+
+h2 {
+  font-size: 30px;
+  font-family: "Bebas Neue", sans-serif;
+  color: #4a2a1a;
+  position: relative;
+  letter-spacing: 5px;
+  top: 345px;
+
+  animation: texto1 2.5s forwards;
+}
+
+@keyframes texto1 {
+  0% {
+    transform: translateX(-250px);
+  }
+
+  40% {
+    transform: translateX(48px);
+  }
+
+  80% {
+    transform: translateX(48px);
+  }
+
+  100% {
+    transform: translateX(450px);
+  }
+}
+
+.titulo2 {
+  font-size: 125px;
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+  line-height: 50px;
+  position: relative;
+  top: 125px;
+  left: 450px;
+
+  animation:
+    texto3 2s forwards 4s,
+    desaparecer 1s forwards 8s;
+}
+
+@keyframes texto3 {
+  0% {
+    transform: translateX(0px) translateY(0px);
+  }
+
+  50% {
+    transform: translateX(-437px) translateY(0px);
+  }
+
+  80% {
+    transform: translateX(-437px) translateY(0px);
+  }
+
+  100% {
+    transform: translateX(-437px) translateY(-100px);
+  }
+}
+
+.titulo3 {
+  font-size: 80px;
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+  line-height: 50px;
+  position: relative;
+  top: 200px;
+  left: 450px;
+
+  animation:
+    texto4 2s forwards 4s,
+    desaparecer 1s forwards 8s;
+}
+
+@keyframes texto4 {
+  0% {
+    transform: translateX(0px) translateY(0px);
+  }
+
+  75% {
+    transform: translateX(-432px) translateY(0px);
+  }
+
+  80% {
+    transform: translateX(-432px) translateY(0px);
+  }
+
+  100% {
+    transform: translateX(-432px) translateY(100px);
+  }
+}
+
+@keyframes desaparecer {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+
+.titulo4 {
+  font-size: 90px;
+  font-family: "Bebas Neue", sans-serif;
+  color: maroon;
+  line-height: 50px;
+  position: relative;
+  top: 90px;
+  left: 0px;
+  text-align: center;
+  animation: texto5 2s forwards 4s;
+  opacity: 0;
+}
+
+@keyframes texto5 {
+  0% {
+    transform: translateX(400px);
+    opacity: 1;
+  }
+
+  70% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+}
+
+.coco {
+  width: 350px;
+  position: absolute;
+  top: 150px;
+  left: 35px;
+  z-index: 10;
+  opacity: 0;
+  transform-origin: center center;
+  backface-visibility: hidden;
+  will-change: transform, opacity;
+  transform: translateZ(0);
+
+  animation:
+    aparecer2 1s forwards 6s,
+    desaparecer1 0.8s forwards 8s;
+}
+
+.vainilla {
+  width: 180px;
+  position: absolute;
+  top: 360px;
+  left: 155px;
+  z-index: 10;
+  opacity: 0;
+  transform-origin: center center;
+  backface-visibility: hidden;
+  will-change: transform, opacity;
+  transform: translateZ(0);
+
+  animation:
+    aparecer1 1s forwards 7s,
+    desaparecer2 0.8s forwards 8s;
+}
+
+@keyframes aparecer1 {
+  from {
+    opacity: 0;
+    transform: scale(2);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes aparecer2 {
+  from {
+    opacity: 0;
+    transform: scale(2);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes desaparecer1 {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+@keyframes desaparecer2 {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+.menu {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.menu a {
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.titulo {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  margin-top: 20px;
+}
