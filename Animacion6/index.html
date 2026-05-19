@@ -1,0 +1,174 @@
+<html>
+
+<head>
+    <title>Codigo grafico</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .contenedor {
+            width: 800px;
+            height: 300px;
+            border: 1px solid black;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .Personaje1,
+        .Personaje2,
+        .Personaje3,
+        .Personaje4 {
+            width: 200px;
+            height: 300px;
+            position: absolute;
+            background-size: cover;
+            left: -50px;
+            top: -300px;
+        }
+
+        .Personaje1 {
+            background-image: url(img3/html.jpg);
+            left: 0px;
+            animation: Personaje1 3s 1 forwards;
+        }
+
+        .Personaje2 {
+            background-image: url(img3/css3.jpg);
+            left: 200px;
+            animation: Personaje2 3s 1 forwards 3s;
+        }
+
+        .Personaje3 {
+            background-image: url(img3/js.jpg);
+            left: 400px;
+            animation: Personaje3 3s 1 forwards 6s;
+        }
+
+        .Personaje4 {
+            background-image: url(img3/bos.jpg);
+            left: 600px;
+            animation: Personaje4 3s 1 forwards 9s;
+        }
+
+        @keyframes Personaje1 {
+            0% {
+                top: -100px;
+                transform: scaleY(180deg);
+            }
+
+            50% {
+                top: 300px;
+            }
+
+            100% {
+                top: 0px;
+            }
+        }
+
+        @keyframes Personaje2 {
+            0% {
+                top: -100px;
+                transform: scaleY(180deg);
+            }
+
+            50% {
+                top: 300px;
+            }
+
+            100% {
+                top: 0px;
+            }
+        }
+
+        @keyframes Personaje3 {
+            0% {
+                top: -100px;
+                transform: scaleY(180deg);
+            }
+
+            50% {
+                top: 300px;
+            }
+
+            100% {
+                top: 0px;
+            }
+        }
+
+        @keyframes Personaje4 {
+            0% {
+                top: -100px;
+                transform: scaleY(180deg);
+            }
+
+            50% {
+                top: 300px;
+            }
+
+            100% {
+                top: 0px;
+            }
+        }
+
+        .Personaje1:hover {
+            transition: 1s;
+            scale: 1.2;
+            z-index: 1;
+        }
+
+        .Personaje2:hover {
+            transition: 1s;
+            scale: 1.2;
+            z-index: 1;
+        }
+
+        .Personaje3:hover {
+            transition: 1s;
+            scale: 1.2;
+            z-index: 1;
+        }
+
+        .Personaje4:hover {
+            transition: 1s;
+            scale: 1.2;
+            z-index: 1;
+        }
+
+        .menu {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .menu a {
+            color: black;
+            font-size: 30px;
+            text-decoration: none;
+        }
+
+        .titulo1 {
+            text-align: center;
+            color: black;
+            font-size: 50px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="titulo1">ANIMACION 6</h1>
+    <div class="contenedor">
+        <div class="Personaje1"></div>
+        <div class="Personaje2"></div>
+        <div class="Personaje3"></div>
+        <div class="Personaje4"></div>
+    </div>
+    <div class="menu">
+        <a href="../index.html">INICIO</a>
+    </div>
+</body>
+
+
+</html>
