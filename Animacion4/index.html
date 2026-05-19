@@ -1,0 +1,146 @@
+<html>
+
+<head>
+    <title> </title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .contenedor {
+
+            width: 400px;
+            height: 200;
+            border: 1px solid black;
+            position: relative;
+            /* provoca el centrado del div contenedor */
+            margin: 0 auto;
+            /* provoca el centrado del div contenedor */
+            overflow: hidden;
+            background-image: url(img2/bosque.jpg);
+            background-size: cover;
+
+        }
+
+        .cuadrito {
+            width: 50px;
+            height: 50px;
+            background-color: transparents;
+            position: absolute;
+            left: -100px;
+            top: -50px;
+
+            animation: cuadrito 3s infinite;
+        }
+
+        .cuadrito1 {
+            width: 50px;
+            height: 50px;
+            ;
+            background-color: transparent;
+            position: absolute;
+            left: -100px;
+            top: -50px;
+
+
+
+            animation: cuadrito1 5s infinite;
+        }
+
+        @keyframes cuadrito {
+            0% {
+                left: -100px;
+                top: 50px;
+                rotate: 0deg;
+
+            }
+
+            50% {
+                left: 175px;
+                top: 0px;
+                rotate: 30deg;
+            }
+
+            100% {
+                left: 400px;
+                top: 50px;
+                rotate: 0deg;
+
+            }
+
+        }
+
+        @keyframes cuadrito1 {
+            0% {
+                left: -100px;
+                top: 50px;
+                rotate: 0deg;
+
+            }
+
+            50% {
+                left: 175px;
+                top: 150px;
+                rotate: -30deg;
+
+            }
+
+            100% {
+                left: 400px;
+                top: 50px;
+                rotate: 0deg;
+
+            }
+
+        }
+
+        .cuadrito img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .cuadrito1 img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .menu {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .menu a {
+            color: black;
+            font-size: 30px;
+            text-decoration: none;
+        }
+
+        .titulo1 {
+            text-align: center;
+            color: black;
+            font-size: 50px;
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class="titulo1">ANIMACION 4</h1>
+    <div class="contenedor">
+        <div class="cuadrito">
+            <img src="img2/Abeja.webp" alt="">
+
+        </div>
+        <di class="cuadrito1">
+            <img src="img2/Abeja.webp" alt="">
+
+        </di>
+    </div>
+    <div class="menu">
+        <a href="../index.html">INICIO</a>
+    </div>
+</body>
+
+</html>
