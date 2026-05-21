@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      
+      .contenedor {
+        height: 650px;
+        width: 400px;
+        background-color: black;
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto;
+      }
+      .gorrito {
+        width: 150px;
+        height: 150px;
+        background-color: red;
+
+        clip-path: polygon(52% 30%, 10% 100%, 100% 100%);
+
+        position: absolute;
+        top: 10px;
+        left: 115px;
+      }
+      .cabeza {
+        width: 250px;
+        height: 250px;
+        background-color: skyblue;
+
+        clip-path: circle(30% at 50% 50%);
+
+        position: absolute;
+        top: 110px;
+        left: 70px;
+      }
+
+      .cuerpo {
+        width: 250px;
+        height: 250px;
+        background-color: green;
+        clip-path: polygon(42% 0, 60% 0, 86% 100%, 16% 100%);
+        position: absolute;
+        top: 310px;
+        left: 67px;
+      }
+
+      .brazo {
+        width: 250px;
+        height: 250px;
+        background-color: maroon;
+        clip-path: polygon(0 35%, 44% 35%, 60% 54%, 46% 66%, 0 65%);
+        position: absolute;
+        top: 260px;
+        left: 220px;
+      }
+
+      .brazo1 {
+        width: 250px;
+        height: 250px;
+        background-color: yellow;
+        clip-path: polygon(57% 36%, 100% 36%, 100% 65%, 58% 65%, 40% 52%);
+        position: absolute;
+        top: 260px;
+        left: -80px;
+      }
+
+      .pie {
+        width: 250px;
+        height: 250px;
+        background-color: purple;
+        clip-path: ellipse(20% 10% at 52% 56%);
+        position: absolute;
+        top: 445px;
+        left: 10px;
+      }
+
+      .pie1 {
+        width: 250px;
+        height: 250px;
+        background-color: purple;
+        clip-path: ellipse(20% 10% at 50% 56%);
+        position: absolute;
+        top: 445px;
+        left: 125px;
+      }
+      .titulo {
+        text-align: center;
+        color: black;
+        font-size: 50px;
+        margin-top: 20px;
+      }
+      .menu {
+        text-align: center;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="titulo">ANIMACION 8</h1>
+    <div class="contenedor">
+      <div class="gorrito"></div>
+      <div class="cabeza"></div>
+      <div class="cuerpo"></div>
+      <div class="brazo"></div>
+      <div class="brazo1"></div>
+      <div class="pie"></div>
+      <div class="pie1"></div>
+    </div>
+    <div class="menu">
+      <a href="../index.html">INICIO</a>
+    </div>
+  </body>
+</html>
