@@ -1,0 +1,145 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.contenedor {
+  width: 800px;
+  height: 600px;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.punta {
+  width: 60px;
+  height: 50px;
+  background-color: red;
+  clip-path: circle(40% at 0% 50%);
+  position: absolute;
+  top: 287px;
+  left: 554px;
+}
+
+.inferior {
+  width: 250px;
+  height: 250px;
+  background-color: orange;
+  clip-path: inset(5% 26% 3% 10%);
+  position: absolute;
+  top: 150px;
+  left: 150px;
+}
+
+.central {
+  width: 220px;
+  height: 180px;
+  background-color: red;
+  clip-path: inset(5% 26% 3% 10%);
+  position: absolute;
+  top: 218px;
+  left: 313px;
+}
+
+.superior {
+  width: 230px;
+  height: 180px;
+  background-color: green;
+  clip-path: circle(40% at 0% 50%);
+  position: absolute;
+  top: 220px;
+  left: 474px;
+}
+
+.arriba {
+  width: 250px;
+  height: 250px;
+  background-color: red;
+  clip-path: inset(27% 10% 60% 0% round 30% 30% 30% 30%);
+  position: absolute;
+  top: 64px;
+  left: 140px;
+}
+
+.abajo1 {
+  width: 160px;
+  height: 160px;
+  background-color: green;
+  clip-path: circle(50% at 50% 50%);
+  position: absolute;
+  top: 280px;
+  left: 125px;
+}
+
+.abajo2 {
+  width: 160px;
+  height: 160px;
+  background-color: green;
+  clip-path: circle(50% at 50% 50%);
+  position: absolute;
+  top: 280px;
+  left: 283px;
+}
+
+.abajo3 {
+  width: 80px;
+  height: 80px;
+  background-color: orange;
+  clip-path: polygon(14% 41%, 36% 41%, 96% 87%, 30% 86%);
+  position: absolute;
+  top: 359px;
+  left: 462px;
+}
+
+.ventana {
+  width: 150px;
+  height: 300px;
+  background-color: green;
+  clip-path: inset(20% 10% 50% 20%);
+  position: absolute;
+  top: 125px;
+  left: 174px;
+}
+
+.parte1 {
+  width: 50px;
+  height: 20px;
+  border-radius: 120px;
+  background-color: orange;
+  clip-path: inset(5% 7% 15% 10% round 20% 20% 0 0);
+  position: absolute;
+  top: 211px;
+  left: 380px;
+}
+
+.parte2 {
+  width: 180px;
+  height: 250px;
+  background-color: red;
+  clip-path: inset(40% 35% 50% 50%);
+  position: absolute;
+  top: 87px;
+  left: 303px;
+}
+
+.parte3 {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  clip-path: inset(45% 30% 45% 20% round 30% 30% 30% 30%);
+  position: absolute;
+  top: 133px;
+  left: 361px;
+}
+
+.titulo {
+  text-align: center;
+  color: black;
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.menu {
+  text-align: center;
+  margin-top: 20px;
+}
