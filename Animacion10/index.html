@@ -1,119 +1,142 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EFECTO PARALLAX</title>
-    <style>
-      * {
-        margin: 0px;
-        padding: 0px;
-      }
-      body {
-        background-color: black;
-      }
-      .contenedor {
-        width: 400px;
-        height: 700px;
-        border: 1px solid white;
-        overflow: hidden;
-        margin: 0 auto;
-        position: relative;
-      }
-      .vapor {
-        width: 200%;
-        position: absolute;
-        z-index: 4;
-        top: 400px;
-        animation: vapor 10s 1 forwards;
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EFECTO PARALLAX</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+      background-color: black;
+    }
+
+    .contenedor {
+      width: 400px;
+      height: 700px;
+      border: 1px solid white;
+      overflow: hidden;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .vapor {
+      width: 200%;
+      position: absolute;
+      z-index: 4;
+      top: 400px;
+      animation: vapor 10s 1 forwards;
+    }
+
+    @keyframes vapor {
+      from {
+        left: 0px;
       }
 
-      @keyframes vapor {
-        from {
-          left: 0px;
-        }
-        to {
-          left: -200px;
-        }
-      }
-
-      .persona {
-        width: 800px;
-        position: absolute;
+      to {
         left: -200px;
+      }
+    }
+
+    .persona {
+      width: 800px;
+      position: absolute;
+      left: -200px;
+      top: 320px;
+      z-index: 3;
+      animation: persona 15s 1 forwards;
+    }
+
+    @keyframes persona {
+      from {
         top: 320px;
-        z-index: 3;
-        animation: persona 15s 1 forwards;
-      }
-      @keyframes persona {
-        from {
-          top: 320px;
-          scale: 80%;
-          filter: grayscale(100%);
-        }
-        to {
-          top: 200px;
-          scale: 120%;
-          filter: grayscale(0%);
-        }
-      }
-      .paisaje {
-        width: 800px;
-        position: absolute;
-        left: -150px;
-        z-index: 2;
-        animation: paisaje 20s 1 forwards;
-      }
-      @keyframes paisaje {
-        from {
-          top: 0px;
-          filter: blur(2px);
-        }
-        to {
-          top: -50px;
-          filter: blur(0px);
-        }
-      }
-      .cielo {
-        width: 800px;
-        position: absolute;
-        left: -150px;
-        z-index: 1;
-        animation: cielo 30s 1 forwards;
-      }
-      @keyframes cielo {
-        from {
-          scale: 100%;
-          filter: blur(5px);
-        }
-        to {
-          scale: 150%;
-          filter: blur(0px);
-        }
-      }
-      .titulo {
-        text-align: center;
-        color: black;
-        font-size: 50px;
-        margin-top: 20px;
+        scale: 80%;
+        filter: grayscale(100%);
       }
 
-      .menu {
-        text-align: center;
-        margin-top: 20px;
+      to {
+        top: 200px;
+        scale: 120%;
+        filter: grayscale(0%);
       }
-    </style>
-  </head>
-  <body>
-    <h1 class="titulo">ANIMACION 10</h1>
-    <div class="contenedor">
-      <img class="vapor" src="img/VAPOR.png" alt="" />
-      <img class="persona" src="img/persona.png" alt="" />
-      <img class="paisaje" src="img/fondo.png" alt="" />
-      <img class="cielo" src="img/cielo.jpg" alt="" />
-    </div>
-    <div class="menu">
-      <a href="../index.html">INICIO</a>
-    </div>
-  </body>
+    }
+
+    .paisaje {
+      width: 800px;
+      position: absolute;
+      left: -150px;
+      z-index: 2;
+      animation: paisaje 20s 1 forwards;
+    }
+
+    @keyframes paisaje {
+      from {
+        top: 0px;
+        filter: blur(2px);
+      }
+
+      to {
+        top: -50px;
+        filter: blur(0px);
+      }
+    }
+
+    .cielo {
+      width: 800px;
+      position: absolute;
+      left: -150px;
+      z-index: 1;
+      animation: cielo 30s 1 forwards;
+    }
+
+    @keyframes cielo {
+      from {
+        scale: 100%;
+        filter: blur(5px);
+      }
+
+      to {
+        scale: 150%;
+        filter: blur(0px);
+      }
+    }
+
+    .titulo {
+      text-align: center;
+      color: black;
+      font-size: 50px;
+      margin-top: 20px;
+    }
+
+    .menu {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .titulo {
+      text-align: center;
+      color: white;
+      font-size: 50px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="titulo">ANIMACION 10</h1>
+  <div class="contenedor">
+    <img class="vapor" src="img/VAPOR.png" alt="" />
+    <img class="persona" src="img/persona.png" alt="" />
+    <img class="paisaje" src="img/fondo.png" alt="" />
+    <img class="cielo" src="img/cielo.jpg" alt="" />
+  </div>
+  <div class="menu">
+    <a href="../index.html">INICIO</a>
+  </div>
+</body>
+
 </html>
