@@ -1,0 +1,105 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.contenedor {
+    width: 1400px;
+    height: 700px;
+    border: 2px solid black;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative
+}
+
+.bosque {
+    width: 1800px;
+    height: 1100px;
+    animation: encoger 3.8s ease-in-out 1 forwards;
+}
+
+@keyframes encoger {
+    from {
+        transform: scale(1.05);
+    }
+
+    to {
+        transform: scale(0.8);
+    }
+}
+
+.arco {
+    width: 1400px;
+    height: 700px;
+    position: absolute;
+    animation: agrandar 4s ease-in-out 1 forwards;
+}
+
+@keyframes agrandar {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(2);
+    }
+}
+
+svg {
+    position: absolute;
+    fill: transparent;
+    font-family: "Zeus Borne";
+    height: 400px;
+}
+
+.titulo {
+    stroke: #fff;
+    stroke-width: 15;
+    stroke-dasharray: 18150;
+    stroke-dashoffset: 18150;
+    font-size: 2000px;
+    animation: text 4s ease-in-out 1 forwards;
+}
+
+@keyframes text {
+    0% {
+        stroke-dashoffset: 18150;
+    }
+
+    80% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: #fff;
+        stroke-dashoffset: 0;
+    }
+}
+
+.menu {
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+.titulo1 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin-top: 15px;
+}
