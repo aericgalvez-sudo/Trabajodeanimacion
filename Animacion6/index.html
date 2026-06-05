@@ -2,10 +2,22 @@
 
 <head>
     <title>Codigo grafico</title>
+    <link rel="stylesheet" href="../styles1.css">
     <style>
         * {
             padding: 0px;
             margin: 0px;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
         }
 
         .contenedor {
@@ -15,6 +27,7 @@
             margin: 0 auto;
             position: relative;
             overflow: hidden;
+            background-color: white;
         }
 
         .Personaje1,
@@ -154,10 +167,19 @@
             font-size: 50px;
             margin-top: 20px;
         }
+
+        .contenedor10 {
+            position: fixed;
+            left: 0px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 9;
+        }
     </style>
 </head>
 
 <body>
+    <div id="menu"></div>
     <h1 class="titulo1">ANIMACION 6</h1>
     <div class="contenedor">
         <div class="Personaje1"></div>
@@ -165,6 +187,7 @@
         <div class="Personaje3"></div>
         <div class="Personaje4"></div>
     </div>
+    <script src="../menu.js"></script>
     <div class="menu">
         <a href="../index.html">INICIO</a>
     </div>
