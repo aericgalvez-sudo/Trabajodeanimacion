@@ -4,7 +4,14 @@
 }
 
 body {
-  background-color: black;
+  margin: 0;
+  min-height: 100vh;
+
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .contenedor {
@@ -448,4 +455,12 @@ h2 {
   color: white;
   font-size: 50px;
   margin-top: 20px;
+}
+
+.contenedor10 {
+  position: fixed;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9;
 }
