@@ -59,7 +59,7 @@ body {
     }
 }
 
-svg {
+.contenedor svg {
     position: absolute;
     fill: transparent;
     font-family: "Zeus Borne";
@@ -102,4 +102,12 @@ svg {
     color: white;
     font-size: 50px;
     margin-top: 15px;
+}
+
+.contenedor10 {
+    position: fixed;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
 }
