@@ -4,7 +4,13 @@
 }
 
 body {
-    background-color: rgb(36, 34, 34);
+    margin: 0;
+    min-height: 100vh;
+
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -16,6 +22,8 @@ body {
     margin: 0 auto;
     position: relative;
     overflow: hidden;
+    background-color: black;
+
 }
 
 .cuadrado {
@@ -23,7 +31,7 @@ body {
     height: 250px;
     position: absolute;
     top: 660px;
-    left: 360px;
+    left: 330px;
     padding: 10px;
 }
 
@@ -126,8 +134,8 @@ body {
 
 .fitness {
     width: 60px;
-    top: 825px;
-    left: 395px;
+    top: 844px;
+    left: 370px;
     position: absolute;
 }
 
@@ -217,17 +225,17 @@ h2 {
 .subtitulo1 {
     color: yellow;
     font-size: 1.2rem;
-    position: absolute;
-    top: 825px;
-    left: 470px;
+    position: relative;
+    top: 842px;
+    left: 440px;
 }
 
 .subtitulo2 {
     color: white;
     font-size: 1.2rem;
-    position: absolute;
+    position: relative;
     top: 840px;
-    left: 470px;
+    left: 440px;
 }
 
 .menu {
@@ -240,4 +248,12 @@ h2 {
     color: white;
     font-size: 50px;
     margin-top: 15px;
+}
+
+.contenedor10 {
+    position: fixed;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
 }
